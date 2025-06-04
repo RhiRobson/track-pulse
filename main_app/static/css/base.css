@@ -1,0 +1,97 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #007BFF; /* Blue */
+    color: #ffffff;
+}
+
+/* Logo container image size */
+.header-logo-container img {
+    height: 70px; /* adjust as needed */
+}
+
+/* Navigation styles */
+nav {
+    /* Optional: add background or border if needed */
+}
+
+nav ul {
+    display: flex; /* horizontal list */
+    list-style: none; /* remove bullets */
+    gap: 15px; /* space between items */
+}
+
+nav li {
+    /* Items will be horizontally aligned by default due to flex on ul */
+}
+
+nav li a {
+    text-decoration: none;
+    color: #ffffff; /* text color */
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for nav links */
+nav li a:hover {
+    background-color: #0056b3; /* darker blue as hover accent */
+    color: #28a745; /* optional: change text color on hover for contrast */
+}
+
+/* Active or clicked state for nav links */
+nav li a:active,
+nav li a:focus {
+    background-color: #004080; /* darker shade for click/focus */
+    color: #ffffff;
+}
+
+/* Main content area */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Buttons styling (blended into nav or page as needed) */
+button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003366; /* darker blue on click */
+}
