@@ -1,0 +1,22 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/form.css' %}" />
+{% endblock %} 
+
+
+{% block nav %}<h1>Add A Run</h1>{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <img src="{% static 'images/TP-White.png' %}" alt="Track Pulse Logo - no text" />
+</div>
+
+<form action="" method="post" class="form-container">
+  {% csrf_token %}
+  <table>
+    {{ form.as_table }}
+  </table>
+  <button type="submit" class="btn submit">Add Run!</button>
+</form>
+{% endblock %}

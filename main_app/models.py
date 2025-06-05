@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 class Run(models.Model):
     name = models.CharField(max_length=100)
@@ -9,3 +10,6 @@ class Run(models.Model):
 
     def __str__(self):
         return f"{self.name} - {self.distance} km"
+
+    def get_absolute_url(self):
+        return reverse('run-detail', kwargs={'run_id': self.id})

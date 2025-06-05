@@ -9,6 +9,7 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'images/Track-Pulse.png' %}"/>
     <title>TrackPulse</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
     {% block head %}{% endblock %}
   </head>
   <body>
@@ -18,10 +19,13 @@
           <img src="{% static 'images/Track-Pulse.png' %}" alt="TrackPulse Logo" />
         </a>
       </div>
+      <h1>
+        {% block nav %}{% endblock %}
+      </h1>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/runs">All Runs</a></li>
+          <li><a href="{% url 'run-create' %}">Add a Run</a></li>
+          <li><a href="{% url 'run-index' %}">All Runs</a></li>
           <!-- Add more nav items as needed -->
         </ul>
       </nav>

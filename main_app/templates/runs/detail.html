@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'css/runs/run-detail.css' %}" />
+{% endblock %} 
+
+{% block nav %}<h1>{{ run.name }} Details</h1>{% endblock %}
+
+{% block content %}
+
+
+  <section class="card-container">
+    <div class="card">
+      <div class="card-content">
+          <img src="{% static 'images/Card-Logo.png' %}" alt="Running" />
+        </div>
+        <div class="run-details"></div>
+        <h1>{{ run.name }}</h1>
+        <p>Run distance (km): {{ run.distance }}</p>
+        <p>Run Time: {{ run.time }}</p>
+        <p>{{ run.notes }}</p>
+        <h6>{{run.date}}</h6>
+        <br/>
+        <a href="{% url 'run-update' run.id %}" class="btn submit">Edit</a>
+        <a href="{% url 'run-delete' run.id %}" class="btn submit">Delete</a>
+
+  </section>
+
+  {% endblock %}

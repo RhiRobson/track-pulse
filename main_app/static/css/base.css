@@ -1,11 +1,10 @@
-/* Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -13,60 +12,58 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
 }
 
-/* Header styling */
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Poppins', sans-serif;
+  }
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #007BFF; /* Blue */
+    background-color: #007BFF; 
     color: #ffffff;
 }
 
-/* Logo container image size */
+
 .header-logo-container img {
-    height: 70px; /* adjust as needed */
+    height: 70px;
 }
 
-/* Navigation styles */
-nav {
-    /* Optional: add background or border if needed */
-}
 
 nav ul {
-    display: flex; /* horizontal list */
-    list-style: none; /* remove bullets */
-    gap: 15px; /* space between items */
+    display: flex; 
+    list-style: none;
+    gap: 15px; 
 }
 
-nav li {
-    /* Items will be horizontally aligned by default due to flex on ul */
-}
 
 nav li a {
     text-decoration: none;
-    color: #ffffff; /* text color */
+    color: #ffffff;
     padding: 8px 12px;
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Hover effect for nav links */
+
 nav li a:hover {
-    background-color: #0056b3; /* darker blue as hover accent */
-    color: #28a745; /* optional: change text color on hover for contrast */
+    background-color: #0056b3;
+    color: #28a745;
 }
 
-/* Active or clicked state for nav links */
+
 nav li a:active,
 nav li a:focus {
-    background-color: #004080; /* darker shade for click/focus */
+    background-color: #004080;
     color: #ffffff;
 }
 
-/* Main content area */
+
 main {
     flex: 1;
     display: flex;
@@ -75,7 +72,7 @@ main {
     padding: 40px;
 }
 
-/* Buttons styling (blended into nav or page as needed) */
+
 button {
     background-color: #007BFF;
     color: #ffffff;
@@ -90,8 +87,32 @@ button {
 
 button:hover {
     background-color: #0056b3;
+    color: #28a745; 
 }
 
 button:active {
-    background-color: #003366; /* darker blue on click */
+    background-color: #003366;
+}
+
+a.btn.submit {
+    display: inline-block;
+    background-color: #007BFF ;
+    color: #ffffff ;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+
+a.btn.submit:hover {
+    background-color: #0056b3;
+    color: #28a745; 
+}
+
+a.btn.submit:active {
+    background-color: #003366;
 }
