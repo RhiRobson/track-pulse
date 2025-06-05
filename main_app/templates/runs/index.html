@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<link
+  rel="stylesheet"
+  href="{% static 'css/runs/run-index.css' %}"
+/>
+{% endblock %} {% block content %}
+
+<section class="page-header">
+  <h1>My Runs 🏃‍➡️</h1>
+<section class="card-container">
+  {% for run in runs %}
+  <div class="card">
+    <div class="card-content">
+      <div class="card-img-container">
+        <img
+          src="{% static 'images/Card-Logo.png' %}"
+          alt="Running"
+        />
+      </div>
+      <h2 class="card-title">{{ run.name }}</h2>
+      <p>Run distance (km): {{ run.distance }}</p>
+      <p>{{ run.notes }}</p>
+      <p><small>{{run.timestamp|date:"d/m/y, H.i"}}</small></p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+{% endblock %}
