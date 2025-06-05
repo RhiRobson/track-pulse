@@ -64,6 +64,31 @@ main>section {
   margin-top: 16px;
 }
 
+.reviews {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #137dee1d;
+  box-shadow: var(--card-box-shadow);
+  border-radius: var(--card-border-radius);
+}
+
+.review {
+  margin-bottom: 30px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.author {
+  text-align: right;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
 @media only screen and (min-width: 768px) {
   main {
     justify-content: space-around;
@@ -84,4 +109,5 @@ main>section {
   .logo-container {
     max-width: 520px;
   }
+
 }

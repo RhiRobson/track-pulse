@@ -30,7 +30,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: hsl(211, 100%, 50%);
     color: #ffffff;
 }
 
