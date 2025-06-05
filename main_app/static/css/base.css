@@ -190,3 +190,26 @@ button.btn.delete:hover {
 button.btn.delete:active {
     background-color: #003366;
 }
+
+nav li form {
+    display: inline-flex;
+    align-items: center;
+}
+
+#logout-form button {
+    all: unset; 
+    cursor: pointer;
+    padding: 0px 12px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #ffffff; 
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+
+#logout-form button:hover {
+    background-color: #0056b3;
+    color: #28a745; 
+}
