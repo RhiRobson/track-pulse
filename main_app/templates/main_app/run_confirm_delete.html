@@ -1,13 +1,13 @@
-{% extends 'base.html' %}  
-{% load static %} 
+{% extends 'base.html' %}
+{% load static %}
 
 {% block nav %}<h1>Delete {{ run.name }}</h1>{% endblock %}
 
 {% block content %}
 
 <div class="page-header">
-    <img src="{% static 'images/TP-White.png' %}" alt="Track Pulse Logo - no text" />
-  </div>
+  <img src="{% static 'images/TP-White.png' %}" alt="Track Pulse Logo - no text" />
+</div>
 
 <h2>Are you sure you want to delete {{ run.name }}?</h2>
 

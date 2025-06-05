@@ -1,8 +1,8 @@
-{% extends 'base.html' %} 
-{% load static %} 
+{% extends 'base.html' %}
+{% load static %}
 {% block head %}
 <link rel="stylesheet" href="{% static 'css/form.css' %}" />
-{% endblock %} 
+{% endblock %}
 
 {% block nav %}
 <h1>Sign Up</h1>
@@ -13,7 +13,7 @@
   <img src="{% static 'images/TP-White.png' %}" alt="A cat using a computer" />
 </div>
 {% if error_message %}
-  <p class="red-text">{{ error_message }}</p>
+<p class="red-text">{{ error_message }}</p>
 {% endif %}
 <form action="" method="post" class="form-container" autocomplete="off">
   {% csrf_token %}
