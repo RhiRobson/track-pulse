@@ -1,0 +1,20 @@
+{% extends 'base.html' %}  
+{% load static %} 
+
+{% block nav %}<h1>Delete {{ run.name }}</h1>{% endblock %}
+
+{% block content %}
+
+<div class="page-header">
+    <img src="{% static 'images/TP-White.png' %}" alt="Track Pulse Logo - no text" />
+  </div>
+
+<h2>Are you sure you want to delete {{ run.name }}?</h2>
+
+<form action="" method="post" class="form">
+  {% csrf_token %}
+  <a href="{% url 'run-detail' run.id %}" class="btn warning">Cancel</a>
+  <button type="submit" class="btn delete">Yes - Delete!</button>
+</form>
+
+{% endblock %}

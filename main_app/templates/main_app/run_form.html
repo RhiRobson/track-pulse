@@ -1,11 +1,17 @@
-{% extends 'base.html' %} 
-{% load static %} 
+{% extends 'base.html' %}
+{% load static %}
 {% block head %}
 <link rel="stylesheet" href="{% static 'css/form.css' %}" />
-{% endblock %} 
+{% endblock %}
 
 
-{% block nav %}<h1>Add A Run</h1>{% endblock %}
+{% block nav %}
+<h1>{% if run %}
+  <h1>Edit {{ run.name }}</h1>
+  {% else %}
+  <h1>Add a Run</h1>
+  {% endif %}
+</h1>{% endblock %}
 
 {% block content %}
 <div class="page-header">
@@ -17,6 +23,6 @@
   <table>
     {{ form.as_table }}
   </table>
-  <button type="submit" class="btn submit">Add Run!</button>
+  <button type="submit" class="btn submit">Submit!</button>
 </form>
 {% endblock %}

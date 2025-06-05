@@ -19,8 +19,8 @@
         <p>{{ run.notes }}</p>
         <h6>{{run.date}}</h6>
         <br/>
-        <a href="{% url 'run-update' run.id %}" class="btn submit">Edit</a>
-        <a href="{% url 'run-delete' run.id %}" class="btn submit">Delete</a>
+        <a href="{% url 'run-update' run.id %}" class="btn warning">Edit</a>
+        <a href="{% url 'run-delete' run.id %}" class="btn delete">Delete</a>
 
   </section>
 

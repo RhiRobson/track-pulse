@@ -72,6 +72,11 @@ main {
     padding: 40px;
 }
 
+.page-header img {
+    max-width: 150px; 
+    height: auto;
+  }
+
 
 button {
     background-color: #007BFF;
@@ -114,5 +119,74 @@ a.btn.submit:hover {
 }
 
 a.btn.submit:active {
+    background-color: #003366;
+}
+
+a.btn.warning {
+    display: inline-block;
+    background-color: #007BFF ;
+    color: #ffffff ;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+
+a.btn.warning:hover {
+    background-color: #ff9100;
+    color: #ffffff; 
+}
+
+a.btn.warning:active {
+    background-color: #003366;
+}
+
+a.btn.delete {
+    display: inline-block;
+    background-color: #007BFF ;
+    color: #ffffff ;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+
+a.btn.delete:hover {
+    background-color: hsla(0, 85%, 46%, 0.824) ;
+    color: #ffffff; 
+}
+
+a.btn.delete:active {
+    background-color: #003366;
+}
+
+button.btn.delete {
+    display: inline-block;
+    background-color: #007BFF ;
+    color: #ffffff ;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+
+button.btn.delete:hover {
+    background-color: hsla(0, 85%, 46%, 0.824) ;
+    color: #ffffff; 
+}
+
+button.btn.delete:active {
     background-color: #003366;
 }
