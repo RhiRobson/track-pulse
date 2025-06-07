@@ -23,3 +23,5 @@ Next steps:
 - I would like to build in a way to visualize the data, maybe as a graph over time, so the user could visually see improvements.
 - I would like to be able to build other activites into the app so the user could add other sports, rather than just running.
 - I would like to be able to build in a search function, so that the user could search effectivily through their posts, for exapmle if they wanted to compare all of the 5km runs thay had completed.
+![Login and branding](https://github.com/user-attachments/assets/5435ce8e-235a-4f7f-8509-2ad4270f71dd)
+![Add a run functionality](https://github.com/user-attachments/assets/689779b3-5ec2-4f01-830e-453b494e071b)
