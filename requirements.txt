@@ -1,0 +1,23 @@
+altgraph @ file:///AppleInternal/Library/BuildRoots/bd680bd8-563b-11ef-bf16-8a553ba56670/Library/Caches/com.apple.xbs/Sources/python3/altgraph-0.17.2-py2.py3-none-any.whl
+asgiref==3.8.1
+Brotli==1.1.0
+certifi==2025.1.31
+click==8.1.8
+distlib==0.3.9
+dj-database-url==3.0.0
+Django==4.2.23
+filelock==3.18.0
+future @ file:///AppleInternal/Library/BuildRoots/bd680bd8-563b-11ef-bf16-8a553ba56670/Library/Caches/com.apple.xbs/Sources/python3/future-0.18.2-py3-none-any.whl
+gunicorn==23.0.0
+h11==0.16.0
+macholib @ file:///AppleInternal/Library/BuildRoots/bd680bd8-563b-11ef-bf16-8a553ba56670/Library/Caches/com.apple.xbs/Sources/python3/macholib-1.15.2-py2.py3-none-any.whl
+packaging==25.0
+pipenv==2024.4.1
+platformdirs==4.3.7
+psycopg2-binary==2.9.10
+six @ file:///AppleInternal/Library/BuildRoots/bd680bd8-563b-11ef-bf16-8a553ba56670/Library/Caches/com.apple.xbs/Sources/python3/six-1.15.0-py2.py3-none-any.whl
+sqlparse==0.5.3
+typing_extensions==4.14.0
+uvicorn==0.34.3
+virtualenv==20.30.0
+whitenoise==6.9.0
