@@ -7,7 +7,7 @@ App description: This app provides a user authenticated environment where the us
 Reason for app: I have recently signed up for a half marathon and when tasked witha a tracking app this automatically seemed viable. I liked the idea that a runner could have a dedicated space to view and compare their training runs.
 
 Link to Planning Doc: https://trello.com/invite/b/68388e9d391b6296db718407/ATTIf9cddc467d9a15e35b30353937db14666DAD202D/ga-project-4-planning <br>
-Link to deployed app: Coming Soon! <br>
+Link to deployed app: (https://track-pulse.onrender.com/) <br>
 
 Attributions:
 
